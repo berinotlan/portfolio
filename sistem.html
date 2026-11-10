@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Berin Otlan — sosyal medya uzmanı. İçerik sistemleri, kreatifler ve bağımsız konseptler.">
+<meta property="og:title" content="Berin Otlan — Bir sonraki projeyi konuşalım">
+<meta property="og:description" content="Marka anlatısını içerik sistemine çeviren sosyal medya uzmanı.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9C%B3%3C/text%3E%3C/svg%3E">
+<title>Berin Otlan — Bir sonraki projeyi konuşalım</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap">
+<style>
+:root{--bg:#F2F0E8;--ink:#0B0B0F;--hi:#2447FF;--on:#F2F0E8;--card:#FFFFFF;--line:rgba(11,11,15,.16);--mut:#5B5B66;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A0A0F;--ink:#F2F0E8;--hi:#D4FF3A;--on:#0A0A0F;--card:#13131B;--line:rgba(242,240,232,.18);--mut:#9A9AA8}}
+:root[data-theme="dark"]{--bg:#0A0A0F;--ink:#F2F0E8;--hi:#D4FF3A;--on:#0A0A0F;--card:#13131B;--line:rgba(242,240,232,.18);--mut:#9A9AA8}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 Inter,system-ui,sans-serif;overflow-x:hidden;transition:background .4s,color .4s}
+h1,h2,h3,h4,.d{font-family:"Bricolage Grotesque",Inter,sans-serif;letter-spacing:-.035em;line-height:.96;margin:0;font-weight:800}
+.m{font-family:"Space Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+a{color:inherit;text-decoration:none}.w{max-width:1200px;margin:0 auto;padding:0 22px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--hi);z-index:90}
+#cur{position:fixed;width:14px;height:14px;border-radius:50%;background:#fff;mix-blend-mode:difference;pointer-events:none;z-index:99;display:none;transition:width .2s,height .2s,margin .2s}
+@media(hover:hover) and (pointer:fine){#cur{display:block}}#cur.b{width:56px;height:56px;margin:-21px 0 0 -21px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:80;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:62px;gap:14px}
+nav b{font:800 20px "Bricolage Grotesque",sans-serif}nav b i{color:var(--hi);display:inline-block;font-style:normal;animation:sp 9s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+nav .l{display:flex;gap:18px;font-size:14px}nav .l a:hover{color:var(--hi)}
+#th{background:none;border:1px solid var(--line);color:var(--ink);border-radius:99px;padding:6px 12px;font:inherit;font-size:12px;cursor:pointer}
+@media(max-width:760px){nav .l{display:none}}
+.hero{position:relative;padding:76px 0 46px;overflow:hidden}
+.hero h1{font-size:clamp(54px,12.5vw,170px);position:relative;z-index:1}
+.hero h1 span{display:inline-block;transition:transform .4s cubic-bezier(.3,1.7,.5,1)}.hero h1 span:hover{transform:translateY(-10px) skewX(-8deg)}.hero h1 em{color:var(--hi);font-style:italic}
+.star{position:absolute;right:-40px;top:20px;font-size:clamp(220px,34vw,460px);line-height:1;color:var(--hi);opacity:.9;animation:sp 22s linear infinite}
+.sub{max-width:600px;margin:24px 0;color:var(--mut);position:relative;z-index:1}.sub b{color:var(--ink)}
+.btn{display:inline-block;background:var(--hi);color:var(--on);padding:13px 24px;border-radius:99px;border:0;font:600 16px Inter,sans-serif;cursor:pointer;position:relative;z-index:1;will-change:transform}
+.btn.g{background:none;color:var(--ink);border:1.5px solid var(--ink);margin-left:8px}
+.mq{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:12px 0}
+.mq div{display:inline-block;animation:mq 30s linear infinite;font:800 26px "Bricolage Grotesque",sans-serif}.mq i{color:var(--hi);font-style:normal;margin:0 16px}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:80px 0}.sh{display:flex;gap:14px;align-items:baseline;margin-bottom:14px;flex-wrap:wrap}.sh h2{font-size:clamp(34px,6vw,76px)}.sh .m{color:var(--hi)}
+.lead{color:var(--mut);max-width:660px;margin:0 0 30px}
+/* three jobs */
+.jobs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:860px){.jobs{grid-template-columns:1fr}}
+.job{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--card);transition:transform .3s,border-color .3s}.job:hover{transform:translateY(-6px);border-color:var(--hi)}
+.job .fr{aspect-ratio:4/5;background:var(--line);display:grid;place-items:center;overflow:hidden;padding:14px}.job img{max-width:100%;max-height:100%;object-fit:contain;display:block;border-radius:10px;transition:transform .6s}.job:hover img{transform:scale(1.05)}
+.job div{padding:20px}.job h3{font-size:34px;margin:6px 0 8px}.job p{margin:0;color:var(--mut)}.job .m{color:var(--hi)}
+.verbs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}
+@media(max-width:860px){.verbs{grid-template-columns:1fr 1fr}}
+.vb{border:1px solid var(--line);border-radius:18px;padding:18px;transition:all .25s;cursor:default}.vb:hover{background:var(--hi);color:var(--on);transform:rotate(-1.5deg) scale(1.03)}
+.vb b{font:800 28px "Bricolage Grotesque",sans-serif;display:block;letter-spacing:-.03em}.vb span{font-size:13px;opacity:.75}
+.ax{display:flex;justify-content:space-between;color:var(--mut);margin-top:10px}
+/* map */
+.fb{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;position:sticky;top:calc(62px + env(safe-area-inset-top,0px));z-index:70;background:var(--bg);padding:10px 0}
+.fb .sep{width:1px;background:var(--line);margin:0 6px}
+.c{border:1px solid var(--line);background:none;color:var(--ink);border-radius:99px;padding:7px 14px;cursor:pointer;transition:all .2s;font:inherit;font-size:14px}
+.c:hover{border-color:var(--hi);color:var(--hi);transform:translateY(-2px)}.c.on{background:var(--hi);color:var(--on);border-color:var(--hi)}
+.sc{overflow-x:auto;padding-bottom:6px}
+.mx{display:grid;grid-template-columns:110px repeat(4,1fr);gap:8px;min-width:700px}
+.mx .hd{color:var(--mut);align-self:end;padding:0 4px;line-height:1.3}.mx .hd b{color:var(--ink);display:block;font:800 15px "Bricolage Grotesque",sans-serif;text-transform:none;letter-spacing:-.02em}
+.cell{border:1px solid var(--line);border-radius:16px;min-height:92px;padding:10px;display:flex;flex-wrap:wrap;gap:7px;align-content:flex-start;cursor:pointer;transition:all .25s;background:var(--card)}
+.cell:hover{border-color:var(--hi);transform:translateY(-3px)}.cell.on{box-shadow:inset 0 0 0 2px var(--hi)}.cell.z{opacity:.5}
+.dot{width:16px;height:16px;border-radius:50%;background:var(--c);transition:transform .25s,opacity .3s}.dot:hover{transform:scale(1.7)}
+.dim{opacity:.13;filter:grayscale(1)}
+.cnt{margin-top:14px;color:var(--mut)}.cnt b{color:var(--hi)}
+/* projects */
+.pj{border-top:1px solid var(--line);padding:46px 0}
+.ph{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:30px;margin-bottom:26px}
+@media(max-width:860px){.ph{grid-template-columns:1fr}}
+.pj .n{color:var(--hi)}.pj h3{font-size:clamp(34px,5.4vw,66px);margin:8px 0 8px}.pj .k{color:var(--mut)}
+.pj h4{font:800 20px/1.1 "Bricolage Grotesque",sans-serif;margin:0 0 8px}.pj p{margin:0 0 14px;color:var(--mut)}
+.rd{border-left:3px solid var(--hi);padding:2px 0 2px 14px;color:var(--ink)!important;font-weight:500}
+.flow{align-items:start;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
+.tl{position:relative;display:flex;flex-direction:column;transition:opacity .3s,filter .3s}
+.ph-img{position:relative;display:block;border-radius:18px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.ph-img img{width:100%;height:auto;display:block;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+a.ph-img:hover img{transform:scale(1.07)}
+.ph-img .st{position:absolute;top:10px;left:10px;background:var(--bg);color:var(--ink);border-radius:99px;width:28px;height:28px;display:grid;place-items:center;font:700 12px "Space Mono",monospace;z-index:2}
+.ph-img .go{position:absolute;right:10px;bottom:10px;background:var(--hi);color:var(--on);border-radius:99px;padding:5px 11px;font:700 11px "Space Mono",monospace;opacity:0;transform:translateY(8px);transition:all .3s}
+a.ph-img:hover .go{opacity:1;transform:none}
+@media(hover:none){.ph-img .go{opacity:1;transform:none}}
+.rl{display:flex;flex-wrap:wrap;gap:5px;margin:10px 0 6px}
+.tg{font:700 11px "Space Mono",monospace;letter-spacing:.05em;text-transform:uppercase;padding:4px 9px;border-radius:99px;border:1px solid var(--ink);white-space:nowrap}.tg.h{background:var(--ink);color:var(--bg)}.tg small{opacity:.6;font-weight:400;text-transform:none}
+.tl b{font:600 14px/1.25 Inter,sans-serif}.tl p{font-size:13px;margin:6px 0 0;color:var(--mut)}
+/* lens */
+.tabs{display:flex;gap:8px;margin-bottom:18px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.sp{border:1px solid var(--line);background:none;color:var(--ink);border-radius:18px;padding:16px;text-align:left;cursor:pointer;transition:all .25s;font:inherit}
+.sp b{display:block;font:800 22px "Bricolage Grotesque",sans-serif}.sp:hover{border-color:var(--hi);transform:translateY(-3px)}.sp.on{background:var(--hi);color:var(--on);border-color:var(--hi)}
+.lp{border:1px solid var(--line);border-radius:26px;padding:30px;background:var(--card);min-height:250px}
+.lp h3{font-size:clamp(28px,4.4vw,52px);margin:8px 0 12px}.lp p{color:var(--mut);max-width:680px}.lp .q{color:var(--hi);font:800 22px "Bricolage Grotesque",sans-serif;margin-top:16px}
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:16px}.chain span{border:1px solid var(--hi);color:var(--hi);border-radius:99px;padding:6px 14px;font:700 12px "Space Mono",monospace}
+.lp ul{padding:0;margin:14px 0 0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}.lp li{border:1px solid var(--line);border-radius:14px;padding:12px 14px;color:var(--mut);font-size:14px}.lp li b{display:block;color:var(--ink);font:700 15px Inter}
+.fade{animation:fd .5s}@keyframes fd{from{opacity:0;transform:translateY(14px)}}
+/* independents */
+.ind{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.ic{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--card);cursor:pointer;transition:transform .3s,border-color .3s}.ic:hover{transform:translateY(-6px);border-color:var(--hi)}
+.ic .fr{aspect-ratio:1;background:var(--line);display:grid;place-items:center;padding:14px}.ic img{max-width:100%;max-height:100%;object-fit:contain;display:block;border-radius:10px}.ic .go2{color:var(--hi);margin-top:12px;display:block}.ic div{padding:18px}.ic h3{font-size:30px;margin:4px 0 6px}.ic .m{color:var(--hi)}
+.ic p{margin:0;color:var(--mut);font-size:14px}.ic .x{max-height:0;overflow:hidden;opacity:0;transition:max-height .45s,opacity .45s;margin-top:0}.ic.open .x{max-height:200px;opacity:1;margin-top:10px;color:var(--ink)}
+.cta{text-align:center;padding:100px 0 60px}.cta h2{font-size:clamp(46px,11vw,150px)}.cta h2 em{color:var(--hi);font-style:italic}.cta .x{margin:30px 0}
+footer{padding:26px 0 46px;color:var(--mut);text-align:center}
+.rv{opacity:0;transform:translateY(36px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+h1,h2,h3,h4,.lead,.tl b,.vb b{text-wrap:balance}p,li,.lp .q{text-wrap:pretty}
+#dlg{position:fixed;inset:0;z-index:95;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(10px);display:none;overflow:auto;padding:72px 0 60px}
+#dlg.on{display:block;animation:fd .35s}.dp{max-width:1100px;margin:0 auto;padding:0 22px}
+#dx{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));right:18px;z-index:96;background:var(--bg)}
+.dh h2{font-size:clamp(36px,6.4vw,84px);margin:10px 0 14px}.dh p{color:var(--mut);max-width:560px;margin:0 0 30px;font-size:18px}
+.ig{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;align-items:start}
+.it{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--card);transition:transform .3s,border-color .3s}.it:hover{transform:translateY(-5px);border-color:var(--hi)}
+.it img{width:100%;height:auto;display:block}.it .tx{padding:16px}.it b{font:800 22px/1.05 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;display:block;margin:4px 0 8px}.it p{margin:0;color:var(--mut);font-size:14px}
+.it.qc{background:var(--hi);color:var(--on);border-color:var(--hi)}.it.qc p{color:var(--on);opacity:.85}.it.qc b{font-size:26px}
+.yy{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}@media(max-width:640px){.yy{grid-template-columns:1fr}}
+.yy div{border:1px solid var(--line);border-radius:16px;padding:14px 16px;font-size:14px;color:var(--mut)}.yy b{display:block;color:var(--hi);font:700 12px "Space Mono",monospace;letter-spacing:.08em;margin-bottom:4px}
+.nt{margin-top:18px;color:var(--mut);font-size:12px}
+
+.star{opacity:.28!important}
+.hero h1{font-size:clamp(46px,9vw,124px)!important}.fl{position:absolute;right:22px;top:34px;width:min(31%,380px);height:560px;z-index:0;pointer-events:none}
+.fl img{position:absolute;width:clamp(90px,10vw,150px);height:auto;border-radius:14px;box-shadow:0 20px 40px -18px rgba(0,0,0,.45);transform:translate(calc(var(--mx,0)*var(--d)*1px),calc(var(--my,0)*var(--d)*1px)) rotate(var(--r));animation:flt 6s ease-in-out infinite;animation-delay:var(--dl)}
+@keyframes flt{50%{translate:0 -16px}}
+@media(max-width:1000px){.fl{display:none}}
+.rh{position:relative;margin-top:44px;--lc:150px}@media(max-width:640px){.rh{--lc:96px}}
+.rhh{color:var(--hi);margin-bottom:6px}.rhc{color:var(--mut);font-size:14px;margin:0 0 10px}
+.lane{display:grid;grid-template-columns:var(--lc) 1fr;gap:14px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.ln b{display:block;font:800 20px/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em}.ln span{color:var(--mut)}
+.cs{position:relative;display:grid;grid-template-columns:repeat(12,1fr);align-items:center;height:46px}
+.cl{display:grid;place-items:center;position:relative;z-index:1}
+.pt{display:block;border-radius:50%;background:var(--hi);animation:pop 9s linear infinite backwards}
+.pt.b{width:32px;height:32px}.pt.s{width:11px;height:11px}.pt.r{width:17px;height:17px;background:none;border:2px solid var(--hi)}
+.cs u{position:absolute;left:0;right:0;top:50%;height:2px;background:var(--line)}
+@keyframes pop{0%{transform:scale(.3);opacity:.2}2%{transform:scale(1.6);opacity:1}7%{transform:scale(1)}94%{opacity:1}100%{opacity:.2;transform:scale(.3)}}
+.ph2{position:absolute;top:56px;bottom:0;width:2px;background:var(--hi);opacity:.7;animation:sweep 9s linear infinite}
+@keyframes sweep{from{left:calc(var(--lc) + 14px)}to{left:100%}}
+.strip{overflow:hidden;padding:30px 0 10px;display:grid;gap:14px}
+.sr{overflow:hidden}.st2{display:flex;gap:14px;width:max-content;animation:mq 70s linear infinite}.sr:nth-child(2) .st2{animation-direction:reverse}
+.st2 img{height:170px;width:auto;border-radius:14px;flex:none;transition:transform .4s}.st2 img:hover{transform:scale(1.07) rotate(-1.2deg)}.sr:hover .st2{animation-play-state:paused}
+.ph-img.vid{cursor:pointer}.ph-img video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .3s;background:#000}.ph-img.pl video{opacity:1}
+.ph-img .go.on{opacity:1;transform:none;pointer-events:none}.ph-img.pl .go{opacity:0}
+#lb{position:fixed;inset:0;z-index:97;background:rgba(5,5,10,.86);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:64px 18px 24px}
+#lb.on{display:flex;animation:fd .3s}
+.lbp{display:grid;grid-template-columns:auto minmax(0,340px);gap:26px;max-width:980px;width:100%;max-height:100%;overflow:auto;background:var(--bg);border-radius:24px;padding:18px;align-items:start;justify-content:center}
+.lbp video{max-height:76vh;max-width:100%;border-radius:14px;background:#000;display:block}
+.lt h3{font-size:30px;margin:6px 0 12px}.lt p{color:var(--mut);margin:12px 0 18px}
+@media(max-width:760px){.lbp{grid-template-columns:1fr}.lbp video{max-height:52vh;margin:0 auto}}
+#lx{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));right:18px;z-index:98;background:var(--bg)}
+
+.lk{display:inline-block;margin-top:8px;font:700 12px "Space Mono",monospace;color:var(--hi);letter-spacing:.04em}.lk:hover{text-decoration:underline}
+.strip{padding:34px 0 10px;gap:16px}
+.st2{gap:0!important;animation-duration:90s!important}
+.sg{display:flex;flex-direction:column;gap:12px;flex:none;padding:0 32px 0 0;margin-right:32px;border-right:1px solid var(--line)}
+.sgt{font:800 clamp(26px,3.4vw,44px)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.04em;white-space:nowrap}.sgt small{color:var(--hi);margin-left:10px;font-size:12px;letter-spacing:.08em}
+.sgc{display:flex;gap:12px}
+.sc2{position:relative;width:150px;height:200px;border-radius:16px;background:var(--card);border:1px solid var(--line);overflow:hidden;display:grid;place-items:center;transition:transform .35s,border-color .3s;flex:none}
+.st2 .sc2 img{height:auto;width:auto;max-width:100%;max-height:100%;object-fit:contain;border-radius:0}.st2 .sc2 img:hover{transform:none}
+.sc2 span{position:absolute;left:8px;top:8px;background:var(--bg);color:var(--ink);border-radius:99px;padding:3px 8px;font-size:10px}
+.sc2::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--c)}
+.sc2:hover{transform:translateY(-8px);border-color:var(--c)}
+
+.tmsl{color:var(--mut);margin:0 0 18px;border:1px dashed var(--line);border-radius:12px;padding:10px 14px;display:inline-block}
+.isum{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}@media(max-width:860px){.isum{grid-template-columns:1fr 1fr}}
+.is{text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:20px;padding:12px;cursor:pointer;display:flex;flex-direction:column;gap:6px;font:inherit;transition:all .25s}
+.is .fr{aspect-ratio:4/3;background:var(--line);border-radius:12px;display:grid;place-items:center;overflow:hidden}.is .fr img{max-width:100%;max-height:100%;object-fit:contain}
+.is b{font:800 24px/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em}.is .m{color:var(--hi);font-size:10px}.is .ot{font-size:13px;color:var(--mut)}
+.is:hover{transform:translateY(-4px);border-color:var(--hi)}.is.on{background:var(--hi);color:var(--on);border-color:var(--hi)}.is.on .ot,.is.on .m{color:var(--on)}
+.ipan{border:1px solid var(--line);border-radius:26px;padding:26px;background:var(--card)}
+.ih h3{font-size:clamp(30px,5vw,60px);margin:8px 0 20px}
+.ib{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:26px}@media(max-width:860px){.ib{grid-template-columns:1fr}}
+.ib h4{font:800 18px "Bricolage Grotesque",sans-serif;margin:0 0 6px}.ib p{margin:0 0 16px;color:var(--mut)}
+.ig2{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;align-items:start}.ipan .it{background:var(--bg)}.ipan .it.qc{background:var(--hi);color:var(--on);border-color:var(--hi)}.ipan .it.qc p,.ipan .it.qc b{color:var(--on)}
+
+.aib{display:inline-block;margin:0 0 6px;font-size:10px;color:var(--hi);border:1px dashed var(--hi);border-radius:99px;padding:3px 8px}
+.rl2{color:var(--hi);margin:12px 0 0!important}
+.mn{color:var(--mut);font-size:13px;max-width:700px;margin:10px 0 0}
+.ab p{max-width:780px;font-size:clamp(17px,2.2vw,22px);line-height:1.45;margin:10px 0 18px}
+.chs{display:flex;flex-wrap:wrap;gap:8px}.chs span{border:1px solid var(--line);border-radius:99px;padding:6px 12px;font-size:13px;color:var(--mut)}
+.kp{border:1px solid var(--line);border-radius:24px;padding:22px;background:var(--card);margin-bottom:26px}.kph{color:var(--hi);margin-bottom:14px}
+.kg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}.kc{border-left:3px solid var(--hi);padding:2px 0 2px 12px}
+.kc b{font:800 clamp(30px,4vw,46px)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.04em;display:block;color:var(--hi)}.kc span{font-weight:600;font-size:14px;display:block;margin-top:4px}.kc small{color:var(--mut);font-size:12px}
+.bo{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px;max-width:720px}.bo figure{margin:0}.bo img{width:100%;height:auto;border-radius:12px;display:block}
+.bo figcaption{font-size:13px;margin-top:8px;font-weight:600}.bo figcaption span{display:block;color:var(--mut);font-weight:400;font-size:10px;margin-bottom:2px}
+
+.abh{font-size:clamp(34px,5.4vw,70px);margin:10px 0 14px;max-width:900px}
+.ab3t{color:var(--mut);margin:20px 0 10px}
+.ab3{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.ab3 span{font:800 clamp(17px,2vw,24px)/1.1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;border:2px solid var(--ink);border-radius:99px;padding:10px 18px;transition:all .3s;cursor:default}
+.ab3 span:hover{background:var(--hi);color:var(--on);border-color:var(--hi);transform:rotate(-2deg) scale(1.04)}
+.bo a{display:block}.bo figcaption .lk{display:block}
+.bf{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:26px}@media(max-width:760px){.bf{grid-template-columns:1fr}}
+.bc{border:1px solid var(--line);border-radius:18px;padding:16px 18px;background:var(--bg)}.bc .m{color:var(--hi)}.bc p{margin:8px 0 0;font-size:16px;color:var(--ink)}
+.bc.kk{background:var(--hi);border-color:var(--hi)}.bc.kk .m,.bc.kk p{color:var(--on)}
+.ipan .ig2{grid-template-columns:repeat(auto-fill,minmax(235px,1fr))}
+.sh2{font:800 22px "Bricolage Grotesque",sans-serif;margin:6px 0 12px}
+.ipan .it .rl{margin:8px 0 4px}.ipan .it .nn{margin-top:6px;font-size:13px}
+.pm{aspect-ratio:1;display:grid;place-items:center;padding:18px;text-align:center;background:var(--hi);color:var(--on);font:800 clamp(16px,1.8vw,21px)/1.12 "Bricolage Grotesque",sans-serif;letter-spacing:-.025em}
+.wk{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:22px}
+.wd{border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--bg);display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.wd .m{color:var(--hi);font-size:10px}.wd b{font:600 14px/1.25 Inter,sans-serif}
+
+.job .fr,.is .fr{display:block}.job .fr img,.is .fr img{width:100%;height:100%;max-width:none;max-height:none;object-fit:contain;display:block}
+.mdl{margin-left:auto;border:1px dashed var(--hi);color:var(--hi);border-radius:99px;padding:5px 12px;font-size:10px;align-self:center}
+</style>
+</head>
+<body>
+<div id="bar"></div><div id="cur"></div>
+<nav><div class="w"><b>berin otlan<i>✳</i></b><div class="l"><a href="#sistem">Sistem</a><a href="#isler">Kreatifler</a><a href="#bakis">Bakış açısı</a><a href="#bagimsiz">Bağımsızlar</a><a href="#iletisim">Konuşalım</a></div><button id="th" class="m">◐ tema</button></div></nav>
+
+<header class="hero"><div class="star">✳</div><div class="fl" id="fl" aria-hidden="true"></div><div class="w">
+<div class="m" style="color:var(--hi)">Sosyal medya & marka iletişimi</div>
+<h1 id="h1" style="margin-top:14px"></h1>
+<p class="sub"><b>Fikir → Tasarım → Uygulama.</b><br>Sosyal medya içeriklerini tek tek değil, bir düzen içinde planlıyorum. Önce bu düzeni, sonra onunla çalıştığım kreatifleri görebilirsin.</p>
+<a class="btn mg" data-h href="#sistem">Sistemi gör ↓</a><a class="btn g mg" data-h href="#isler">Kreatiflere git</a>
+</div></header>
+<div class="mq"><div id="mq"></div></div>
+
+<section id="hakkimda" style="padding:56px 0 0"><div class="w rv"><div class="ab"><div class="m" style="color:var(--hi)">Kısaca</div><h3 class="abh">Marka anlatısını içerik sistemine çeviren sosyal medya uzmanı.</h3><p>İşveren markasından ürün iletişimine, farklı hedef kitleler için içerik stratejileri ve marka anlatıları geliştirdim. Rhino Runner’da Eczacıbaşı’nda Yaşa, Otokar, Darüşşafaka, Flormar Careers ve ETİ Careers gibi hesapları yönettim.</p><div class="m ab3t">En sevdiğim üç iş</div><div class="ab3"><span>Marka dillerini çözmek</span><span>Fikri uygulanabilir bir formata çevirmek</span><span>Çıkan işi verilerle geliştirmek</span></div><div class="chs"><span>Rhino Runner · 2024–26</span><span>Çözüm/TBWA · CRM · 2023–26</span><span>Peak On Air · 2025</span><span>Clockwork · Hyundai TR · 2023–24</span><span>BravoWorks · 2022–23</span></div></div></div></section>
+<section id="sistem"><div class="w">
+<div class="sh rv"><span class="m">01 / Sistem</span><h2>Her içeriğin hesaptaki<br>görevi farklıdır.</h2><span class="mdl m">Model · Hero · Hub · Hygiene</span></div>
+<p class="lead rv">Bir içerik planında her parçanın hesaptaki görevi farklıdır. Üç görev aşağıda, birer örnekle.</p>
+<div class="jobs rv" id="jobs"></div>
+<div class="rh rv" id="rh"></div>
+<div class="sh rv" style="margin-top:70px"><span class="m">02 / Ton</span><h2 style="font-size:clamp(28px,4.6vw,56px)">Her içeriğin bir de tonu var.</h2><span class="mdl m">Model · Content Matrix</span></div>
+<p class="lead rv">Bir içerik güldürebilir, bilgi verebilir, duygu uyandırabilir ya da karar vermeye yardım edebilir. Hepsini aynı içerikte yapmaya çalışmak mesajı bulanıklaştırır.</p>
+<div class="verbs rv" id="verbs"></div>
+<div class="ax m rv"><span>← kalp</span><span>kafa →</span></div>
+</div></section>
+
+<section id="harita" style="padding-top:0"><div class="w">
+<div class="sh rv"><span class="m">03 / Harita</span><h2 style="font-size:clamp(28px,4.6vw,56px)">Çalışmalarım bu haritada nerede?</h2><span class="mdl m">Model · Hero · Hub · Hygiene × Content Matrix</span></div>
+<p class="lead rv">Satırlar yayın ritmini, sütunlar içeriğin tonunu gösteriyor. Her nokta bir kreatif. Bir kutuya dokunarak aşağıdaki listeyi süzebilirsin.</p>
+<div class="fb rv" id="fb"></div>
+<div class="sc rv"><div class="mx" id="mx"></div></div>
+<div class="cnt m" id="cnt"></div>
+<p class="mn">Not: Hygiene satırını Instagram’da sabitlenen, öne çıkanlarda duran rehber içerikler üzerinden okuyorum. Arama odaklı Hygiene içerikleri çoğunlukla web ve YouTube’da yaşar.</p>
+</div></section>
+
+<div class="strip" id="strip" aria-hidden="true"></div>
+<section id="isler" style="padding-top:20px"><div class="w">
+<div class="sh rv"><span class="m">04 / Kreatifler</span><h2>Kreatifler.<br>Her biri sistemde bir görev üstleniyor.</h2></div>
+<p class="lead rv">Videolu işlerin üzerine gelince önizleme oynar, dokununca tam video açılır. Altında içeriğin görevi ve o görevi neden aldığı yazıyor.</p>
+<div id="pjs"></div>
+</div></section>
+
+<section id="bakis" style="background:var(--card)"><div class="w">
+<div class="sh rv"><span class="m">05 / Bakış açısı</span><h2>İşin öncesi. Fikrin gerekçesi.</h2></div>
+<p class="lead rv">Her proje için üç soru: neyi fark ettik, neyi seçtik, nasıl hayata geçirdik?</p>
+<div class="tabs rv" id="tabs"></div>
+<div class="steps rv" id="steps"></div>
+<div class="lp rv" id="lp"></div>
+</div></section>
+
+<section id="bagimsiz"><div class="w">
+<div class="sh rv"><span class="m">06 / Bağımsızlar</span><h2>Kendi yazdığım briefler.</h2></div>
+<p class="lead rv">Dört brief’i kendim yazdım; hepsi aynı sorudan çıkıyor: bu hesap kim, kime hangi sesle konuşuyor? Brief’i, karşılığını, içerik fikirlerini ve örnek bir akışı aynı düzende görebilirsin.</p>
+<p class="tmsl m rv">Temsili çalışmalar · Yayınlanmamış konseptler · Görseller konsept görselleştirmesidir; BKBO ve SOMA’da AI ile üretilmiştir</p>
+<div class="iw rv"><div class="isum" id="isum"></div><div class="ipan" id="ipan"></div></div>
+</div></section>
+
+<section class="cta" id="iletisim"><div class="w rv">
+<div class="m" style="color:var(--hi)">Berin Otlan · Sosyal medya uzmanı</div>
+<h2>Bir sonraki <em>projeyi</em> konuşalım.</h2>
+<div class="x"><a class="btn mg" data-h href="mailto:berinotlan@gmail.com">berinotlan@gmail.com ↗</a><a class="btn g mg" data-h href="https://www.linkedin.com/in/berin-otlan/" target="_blank" rel="noopener">LinkedIn</a><a class="btn g mg" data-h href="https://www.behance.net/berinercin" target="_blank" rel="noopener">Behance</a></div>
+</div></section>
+<div id="lb"><button id="lx" class="c" data-h>kapat ✕</button><div class="lbp" id="lbp"></div></div>
+<footer class="m">Fikir · Tasarım · Uygulama — © 2026 Berin Otlan</footer>
+
+<script>
+(function(){
+var I={"kts-main": "06_Yukle/assets/kts-main-0.jpg", "kts-poster": "06_Yukle/assets/kts-poster.png", "kts-new": "06_Yukle/assets/kts-new-0.jpg", "kts-yaz": "05_Yukle/assets/kts-yaz-donemi.png", "esan-c": "06_Yukle/assets/esan-carousel-0.jpg", "esan-v": "06_Yukle/assets/esan-video-0.jpg", "flormar-a": "06_Yukle/assets/flormar-poster.png", "flormar-b": "06_Yukle/assets/flormar-benefit-0.jpg", "atlas": "06_Yukle/assets/otokar-atlas-ai.webp", "sultan": "06_Yukle/assets/otokar-sultan-ai.jpg", "ecentro": "06_Yukle/assets/otokar-ecentro-poster.png", "mesut": "06_Yukle/assets/kent-mesut-0.jpg", "vedat": "06_Yukle/assets/kent-vedat-0.jpg", "darus": "06_Yukle/assets/darus-poster.png", "eti": "06_Yukle/assets/eti-0.jpg", "kg-medeni": "06_Yukle/assets/kagider-medeni-0.jpg", "kg-lider": "06_Yukle/assets/kagider-lider-0.jpg", "kg-ny": "06_Yukle/assets/kagider-ny-landscape.png", "akrilik": "06_Yukle/assets/akrilik-0.jpg", "akset": "06_Yukle/assets/akset.jpg", "carbon": "06_Yukle/assets/carbon-poster.jpg", "bogaz": "06_Yukle/assets/konsept-bogaz-1.jpg", "bkbo": "05_Yukle/assets/bkbo-yer-imi-kitap-v2.png", "soma": "05_Yukle/assets/soma-ankara-v11.png", "soma-sinav": "05_Yukle/assets/soma-sinav-yok.png", "soma-ezber": "05_Yukle/assets/soma-ezberini-sil.png", "zenerji": "06_Yukle/assets/konsept-z-enerji-3.jpg", "zenerji1": "06_Yukle/assets/konsept-z-enerji-1.jpg", "darus-hi": "06_Yukle/assets/darus-poster.png", "esan-hi": "06_Yukle/assets/esan-carousel-0.jpg", "flormar-b-hi": "06_Yukle/assets/flormar-benefit-0.jpg", "darus-reel": "yeni_assets/darus-reel.jpg", "bo1": "yeni_assets/bo1.jpg", "bo2": "yeni_assets/bo2.jpg", "bo3": "yeni_assets/bo3.jpg"};var V={"kts-new": "06_Yukle/assets/kts-new-0.mp4", "kts-basvuru": "03_Yukle/assets/kts-basvuru.mp4", "esan": "05_Yukle/assets/esan-video-0.mp4", "renk": "04_Yukle/assets/flormar-renk-avi.mp4", "benefit": "06_Yukle/assets/flormar-benefit-0.mp4", "ecentro": "01_Yukle/assets/otokar-ecentro-ai.mp4", "vedat": "03_Yukle/assets/kent-vedat-0.mp4", "darus": "05_Yukle/assets/darus-maraton-2025.mp4", "eti": "06_Yukle/assets/eti-0.mp4", "kg-medeni": "04_Yukle/assets/kagider-medeni-0.mp4", "kg-lider": "04_Yukle/assets/kagider-lider-0.mp4", "kg-ny": "02_Yukle/assets/kagider-ny-0.mp4", "carbon": "04_Yukle/assets/carbon.mp4"};var AIK={atlas:1,sultan:1,ecentro:1};var VK={"kts-new":"kts-new","kts-poster":"kts-basvuru","esan-v":"esan","flormar-a":"renk","flormar-b":"benefit","ecentro":"ecentro","vedat":"vedat","darus":"darus","eti":"eti","kg-medeni":"kg-medeni","kg-lider":"kg-lider","kg-ny":"kg-ny","carbon":"carbon"};
+var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return[].slice.call((r||document).querySelectorAll(s))};
+var HS={Hero:"Dikkat çek",Hub:"Alışkanlık yarat",Hygiene:"Soruyu cevapla"},QS={Entertain:"Güldür",Educate:"Öğret",Inspire:"Hissettir",Convince:"İkna et"},IG="https://www.instagram.com/p/",RL="https://www.instagram.com/p/";
+var P=[
+{n:"01",t:"Eczacıbaşı’nda Yaşa",role:"Rhino Runner · Sosyal medya uzmanı (2024–2026)",k:"İşveren markası · Kampanya",c:250,h:"Staj programını bir deneyim olarak anlatmak.",d:"“Hangi iş bana göre?” sorusuna masa başında cevap vermek zor. Deneme sürüşü fikri, gençlerin karar verme ihtiyacını gerçek iş deneyimiyle buluşturuyor.",s:"Kampanya tek bir duyuruyla değil, aday sürece girdikçe açılan aşamalarla ilerliyor: önce fikir, sonra geri sayım, sonra programın kendisi.",p:[
+["Kariyer Test Sürüşü / Ana görsel","Hero","Inspire",IG+"DUh098-jLpp/","kts-main","Kampanyanın fikrini ve adını tek görselde tanıtıyor."],
+["Kariyer Test Sürüşü / Başvuru filmi","Hero","Convince","","kts-poster","Adayların başvuru öncesi sorularını içeriğin konusu yapıyor."],
+["Kariyer Test Sürüşü / Son 2 gün","Hub","Convince",IG+"DVOIERhDJzU/","kts-new","Başvuru kapanmadan önce hatırlatma görevi görüyor."],
+["Kariyer Test Sürüşü / Deneyim başladı","Hub","Inspire","","kts-yaz","Yaz dönemi başlayınca programa katılanları gösteriyor."],
+["EnGenius Proje Yarışması / Bir fikrin mi var?","Hub","Educate",IG+"Deyl0ItDJMj/","esan-c","Yarışmaya katılım çağrısını meraklı bir dille açıyor."],
+["EnGenius Proje Yarışması / Mühendislik fikrine davet","Hero","Inspire",IG+"DejUZYWMCBB/","esan-v","Başvuruların sürdüğünü, madenin içinden bir sahneyle duyuruyor."]]},
+{n:"02",t:"Flormar Careers",role:"Rhino Runner · Sosyal medya uzmanı (2024–2026)",k:"Seri fikri · Çalışan deneyimi",c:330,h:"Marka renginden bir keşif serisi.",d:"Renk Avı, markanın rengini çalışanların gündelik hayatında arayan haftalık bir seri. Yan haklar içeriği ise aranan bilgiyi tek yerde topluyor.",s:"Renk Avı takipçiyi her hafta geri getiriyor; yan haklar rehberi ise çalışanın ve adayın aradığında cevap bulduğu yer.",p:[
+["Renk Avı / Yeşil","Hub","Entertain",IG+"DcyR23sKA_R/","flormar-a","Her hafta aynı kurguyla tekrarlanıyor; takipçi formatı tanıyor."],
+["Bir ikona dokun, bir yan hakkı keşfet","Hygiene","Educate",IG+"DewYrHxK6Ta/","flormar-b","Yan hakları merak eden çalışan ve adayın başvuracağı rehber."]]},
+{n:"03",t:"Otokar Ticari Araçlar",role:"Rhino Runner · Sosyal medya uzmanı (2024–2026)",k:"Strateji · AI konseptleri",c:30,h:"Araç özelliklerini kullanıcının günüyle anlatmak.",d:"Kaptan için bir çalışma alanı, işletmeci için her gün verilen bir karar. Aynı ürüne yönelen farklı sorular, içerik sisteminin başlangıç noktası. AI konseptleri stratejiyi görselleştiriyor; Yeni Kent röportajları yayınlanmış işlerdir.",s:"Her içerik tek bir kullanıcıya ve onun tek bir ihtiyacına odaklanıyor; ürün özelliği o ihtiyacın cevabı olarak giriyor.",p:[
+["Atlas 11 / Uzun mesainin konforlu tarafı","Hub","Educate","","atlas","Koltuk özelliğini uzun mesai bağlamında anlatıyor."],
+["Sultan Comfort / Yol uzar, konfor sürer","Hub","Inspire","","sultan","Tek bir faydayı yol senaryosu içinde gösteriyor."],
+["Otonom e-CENTRO / Bir iş gününün rotası","Hero","Inspire","","ecentro","Aracı özellik listesiyle değil, bir iş gününün akışıyla tanıtıyor."],
+["Yeni Kent deneyimleri / Mesut Bülbül","Hub","Convince",RL+"DbSYOy8s192/","mesut","Ürünü kullanan kişinin deneyimini aktarıyor."],
+["Yeni Kent deneyimleri 7 / Vedat Yıldırım","Hub","Convince",RL+"DaiWqOiMnNC/","vedat","Aynı formatı farklı bir kullanıcıyla sürdürüyor."]]},
+{n:"04",t:"Darüşşafaka",role:"Rhino Runner · Sosyal medya uzmanı (2024–2026)",k:"İstanbul Maratonu 2025 · CGI",c:140,h:"İstanbul Maratonu’ndan bağış çağrısına.",d:"Darüşşafaka koşucularının İstanbul Maratonu’nda başlattığı bağış kampanyası için iletişim kurgulandı. Odakta koşunun kendisi değil, eğitime destek için atılan adımlar var.",s:"Katılım çağrısıyla başlayan, maraton günü görünürlükle yükselen ve teşekkürle kapanan tek bir anlatı.",p:[
+["İstanbul Maratonu 2025 / CGI film","Hero","Inspire","","darus","Boğaz Köprüsü’ndeki Darüşşafaka bayrağıyla mesajı maraton gününde görünür kılıyor."],
+["Maraton heyecanı başladı!","Hub","Inspire",IG+"DdYOHMZNn0I/","darus-reel","Maraton günü heyecanını, kampanyanın bağış mesajıyla aynı karede buluşturuyor."]]},
+{n:"05",t:"ETİ Careers",k:"Genç yetenek · Kısa video",c:50,h:"Başvuru sürecini adayın diliyle anlatmak.",d:"Başvuru linkini gören adayın tepkisi üzerine kurulu kısa bir video.",s:"Kurumsal bir başvuru çağrısı, adayın akışta zaten tanıdığı bir tepkiyle başlıyor.",p:[
+["ETİ D.E. Global / Başvuru linkini görünce","Hub","Entertain",RL+"DG437sjokTj/","eti","Başvuru çağrısını adayların tanıdığı bir sahne üzerinden iletiyor."]]},
+{n:"06",t:"KAGİDER",k:"Sosyal etki · Motion",c:300,h:"Her gündem için ayrı bir anlatım dili.",d:"Aynı tonu tekrarlamıyoruz: sinematik kurgu, tipografik ritim, uluslararası temsili anlatan hareket. Konunun ihtiyacına göre biçim alıyor.",s:"Her gündem kendi biçimini seçiyor: anma sinematik, program tipografik, uluslararası temsil hareketli.",p:[
+["Bir gün, bir asrın geleceğini değiştirir","Hero","Inspire",IG+"DeD8TojlBcM/","kg-medeni","Yasal bir dönüm noktasını bugünün konusuna bağlıyor."],
+["Geleceğin Kadın Liderleri / Yeni döneme merhaba","Hub","Inspire",IG+"DerEVBqFJxk/","kg-lider","Program duyurusunu topluluğa davet diliyle veriyor."],
+["Kadın girişimcilerin sesi dünya sahnesinde","Hub","Educate",IG+"Dd8994nCCWr/","kg-ny","Uluslararası girişimci temsilini hareketli grafikle anlatıyor."]]},
+{n:"07",t:"Aksa Akrilik · Carbon · Akset",k:"Kurumsal iletişim · AI film",c:190,h:"Üç marka için üç ayrı anlatı görevi.",d:"Malzemeden enerjiye uzanan üç markada, her markanın uzmanlığı kendi hedef kitlesine göre anlatılıyor.",s:"Üç markanın üç ayrı görevi var: Akrilik malzemeyi tanıtıyor, Carbon teknik özelliğe bağlam veriyor, Akset sistemi görünür kılıyor.",p:[
+["Aksa Akrilik / Ar-Ge’yi görünür kılmak","Hygiene","Educate",IG+"DeL4TmQHZ77/","akrilik","Ar-Ge çalışmasını üretim detaylarıyla anlatıyor."],
+["Akset / Ölçeğe anlam katmak","Hub","Educate","https://www.linkedin.com/feed/update/urn:li:activity:7514233882733621248/","akset","Üretim kapasitesini sanayinin ihtiyacıyla ilişkilendiriyor."],
+["Aksa Carbon / Cumhuriyet, bilim ve üretim","Hero","Inspire","https://www.linkedin.com/feed/update/urn:li:activity:7521436780085088256/","carbon","Cumhuriyet temasını bilim ve üretim görüntüleriyle işliyor."]]}];
+var KS=[[500,"","+","içerik","Güçlü içerik takvimi"],[12,"","M+","erişim","+%174 yıllık artış"],[59,"","K+","etkileşim","2 yıllık kümülatif"],[57,"+%","","Instagram takipçi büyümesi","10.796 → 16.900"],[6,"+","K","yeni takipçi","Organik ve reklamlı, 2,5 yılda"]];
+var BO=[["bo1","Yılın en çok etkileşim alan içeriği","Merhaba, ben PC!","https://www.instagram.com/reel/DGLffiXI-lr/"],["bo2","Yılın en çok like alan içeriği","Eczacıbaşı Gelecek Okulu başlıyor!","https://www.instagram.com/reel/DF7zJ2soJHq/"],["bo3","Yılın en çok izlenen içeriği","8 Mart Dünya Kadınlar Günü","https://www.instagram.com/reel/DG5apsTi6eB/"]];
+P[0].kp='<div class="kp rv"><div class="kph m">Eczacıbaşı’nda Yaşa · 2025 performans özeti</div><div class="kg">'+KS.map(function(k){return '<div class="kc"><b class="cu" data-n="'+k[0]+'" data-p="'+k[1]+'" data-s="'+k[2]+'">'+k[1]+k[0]+k[2]+'</b><span>'+k[3]+'</span><small>'+k[4]+'</small></div>'}).join("")+'</div><div class="bo">'+BO.map(function(b){return '<figure><a data-h href="'+b[3]+'" target="_blank" rel="noopener"><img src="'+I[b[0]]+'" alt="'+b[2]+'"></a><figcaption><span class="m">'+b[1]+'</span>'+b[2]+'<a class="lk" data-h href="'+b[3]+'" target="_blank" rel="noopener">Instagram’da aç ↗</a></figcaption></figure>'}).join("")+'</div></div>';
+var A=[];P.forEach(function(p,pi){p.p.forEach(function(x,i){A.push({id:"r"+pi+"_"+i,h:x[1],q:x[2],c:p.c})})});
+var f={h:"",q:""};
+var ENT=/(Hero|Hub|Hygiene|Entertain|Educate|Inspire|Convince|Instagram|LinkedIn|TikTok|Motion|Content|Matrix|Careers|CGI)/,ENG=new RegExp(ENT.source,"g");
+function fixEN(root){$$(".m",root||document).forEach(function(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),ns=[],n;while(n=w.nextNode()){if(!n.parentNode.closest('[lang="en"]')&&ENT.test(n.nodeValue))ns.push(n)}ns.forEach(function(n){var sp=document.createElement("span");sp.innerHTML=n.nodeValue.replace(/[&<>]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;"}[c]}).replace(ENG,'<span lang="en">$1</span>');n.parentNode.replaceChild(sp,n)})})}
+/* hero */
+$("#h1").innerHTML="<span>Fikrin</span> <span>bir</span> <em><span>karşılığı</span></em> <span>olmalı.</span>";
+$("#mq").innerHTML=("FİKİR<i>✳</i>STRATEJİ<i>✳</i>TASARIM<i>✳</i>UYGULAMA<i>✳</i>").repeat(8);
+/* system story */
+$("#jobs").innerHTML=[["Hero","Dikkat çek","Seyrek yayınlanan, fikri ve yatırımı büyük işler. Markayı yeni kitlelere tanıtır.","Darüşşafaka: İstanbul Maratonu filmi.","darus-hi"],["Hub","Alışkanlık yarat","Belirli bir ritimle yayınlanan seriler. Takipçi hesapta ne bulacağını bilerek geri gelir.","EnGenius Proje Yarışması serisi.","esan-hi"],["Hygiene","Soruyu cevapla","Kullanıcının aradığı bilgiyi hazır tutan içerikler. Uzun süre geçerli kalır.","Yan haklar rehberi.","flormar-b-hi"]].map(function(j){return '<div class="job"><div class="fr"><img src="'+I[j[4]]+'" alt="'+j[3]+'"></div><div><span class="m">'+j[0]+'</span><h3>'+j[1]+'</h3><p>'+j[2]+'</p><p style="margin-top:10px;color:var(--ink);font-size:13px">↳ '+j[3]+'</p></div></div>'}).join("");
+$("#verbs").innerHTML=[["Güldür","Entertain","Farkındalık aşamasında dikkat çeker."],["Öğret","Educate","Bilgi vererek güven oluşturur."],["Hissettir","Inspire","Markayla duygusal bağ kurar."],["İkna et","Convince","Karar aşamasında kanıt sunar."]].map(function(v){return '<div class="vb" data-h><b>'+v[0]+'</b><span class="m" style="display:block;margin:4px 0 8px">'+v[1]+'</span><span>'+v[2]+'</span></div>'}).join("");
+/* filters + map */
+$("#fb").innerHTML=Object.keys(HS).map(function(x){return '<button class="c" data-h data-k="h" data-v="'+x+'">'+HS[x]+'</button>'}).join("")+'<span class="sep"></span>'+Object.keys(QS).map(function(x){return '<button class="c" data-h data-k="q" data-v="'+x+'">'+QS[x]+'</button>'}).join("")+'<button class="c" data-h data-k="x">temizle ✕</button>';
+var mx='<div></div>'+Object.keys(QS).map(function(q){return '<div class="hd m"><b>'+QS[q]+'</b>'+q+'</div>'}).join("");
+Object.keys(HS).forEach(function(h){mx+='<div class="hd m" style="align-self:center"><b>'+HS[h]+'</b>'+h+'</div>';Object.keys(QS).forEach(function(q){var it=A.filter(function(a){return a.h===h&&a.q===q});mx+='<div class="cell'+(it.length?'':' z')+'" data-h data-ch="'+h+'" data-cq="'+q+'">'+it.map(function(a){return '<i class="dot" data-id="'+a.id+'" style="--c:hsl('+a.c+' 90% 58%)"></i>'}).join("")+'</div>'})});
+$("#mx").innerHTML=mx;
+/* projects */
+function tag(h,q){return '<div class="rl"><span class="tg h">'+HS[h]+' <small>'+h+'</small></span><span class="tg">'+QS[q]+' <small>'+q+'</small></span></div>'}
+$("#pjs").innerHTML=P.map(function(p,pi){return '<article class="pj rv"><div class="ph"><div><div class="m n">'+p.n+' / '+p.t+'</div><h3>'+p.h+'</h3><div class="k m">'+p.k+'</div></div><div><h4>İşin arkasındaki düşünce</h4><p>'+p.d+'</p><p class="rd">Sistem okuması: '+p.s+'</p>'+(p.role?'<p class="rl2 m">Çalışma · '+p.role+'</p>':'')+'</div></div>'+(p.kp||"")+'<div class="flow">'+p.p.map(function(x,i){var id="r"+pi+"_"+i,vk=VK[x[4]],inner='<span class="st">'+(i+1)+'</span><img loading="lazy" src="'+I[x[4]]+'" alt="'+x[0]+'">'+(vk?'<video muted loop playsinline preload="none" data-k="'+vk+'"></video><span class="go on">▶ OYNAT</span>':(x[3]?'<span class="go">'+(x[3].indexOf("linkedin")>-1?"LINKEDIN’DE AÇ ↗":"INSTAGRAM’DA AÇ ↗")+'</span>':'')),box=vk?'<div class="ph-img vid" data-h tabindex="0" role="button" aria-label="'+x[0]+' videosunu oynat" data-pi="'+pi+'" data-i="'+i+'">'+inner+'</div>':(x[3]?'<a class="ph-img" data-h href="'+x[3]+'" target="_blank" rel="noopener">'+inner+'</a>':'<div class="ph-img">'+inner+'</div>');return '<div class="tl" id="'+id+'">'+box+tag(x[1],x[2])+(AIK[x[4]]?'<span class="aib m">Strateji için AI konsepti</span>':'')+'<b>'+x[0]+'</b><p>'+x[5]+'</p>'+(x[3]?'<a class="lk" data-h href="'+x[3]+'" target="_blank" rel="noopener">'+(x[3].indexOf("linkedin")>-1?"LinkedIn’de":"Instagram’da")+' aç ↗</a>':'')+'</div>'}).join("")+'</div></article>'}).join("");
+function ok(a){return(!f.h||a.h===f.h)&&(!f.q||a.q===f.q)}
+function apply(){var n=0;A.forEach(function(a){var m=ok(a);if(m)n++;$("#"+a.id).classList.toggle("dim",!m);$('.dot[data-id="'+a.id+'"]').classList.toggle("dim",!m)});
+$$(".c[data-k]").forEach(function(b){var k=b.dataset.k;if(k!=="x")b.classList.toggle("on",f[k]===b.dataset.v)});
+$$(".cell").forEach(function(c){c.classList.toggle("on",!!(f.h&&f.q&&c.dataset.ch===f.h&&c.dataset.cq===f.q))});
+$("#cnt").innerHTML="<b>"+n+"</b> / "+A.length+" kreatif görünüyor"+(f.h||f.q?" · "+[f.h&&HS[f.h],f.q&&QS[f.q]].filter(Boolean).join(" × "):"")}
+$("#fb").addEventListener("click",function(e){var b=e.target.closest(".c");if(!b)return;var k=b.dataset.k;if(k==="x")f={h:"",q:""};else f[k]=f[k]===b.dataset.v?"":b.dataset.v;apply()});
+$$(".cell").forEach(function(c){c.addEventListener("click",function(e){if(e.target.classList.contains("dot")){$("#"+e.target.dataset.id).scrollIntoView({behavior:"smooth",block:"center"});return}var s=f.h===c.dataset.ch&&f.q===c.dataset.cq;f=s?{h:"",q:""}:{h:c.dataset.ch,q:c.dataset.cq};apply()})});
+apply();
+/* video */
+$$(".ph-img.vid").forEach(function(b){var v=$("video",b);
+ b.addEventListener("mouseenter",function(){if(!v.src)v.src=V[v.dataset.k];var p=v.play();if(p&&p.catch)p.catch(function(){});b.classList.add("pl")});
+ b.addEventListener("mouseleave",function(){v.pause();b.classList.remove("pl")});
+ function op(){openV(+b.dataset.pi,+b.dataset.i)}
+ b.addEventListener("click",op);b.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();op()}})});
+var lb=$("#lb");
+function openV(pi,i){var p=P[pi],x=p.p[i],k=VK[x[4]];$("#lbp").innerHTML='<video controls autoplay playsinline src="'+V[k]+'"></video><div class="lt"><span class="m" style="color:var(--hi)">'+p.t+'</span><h3>'+x[0]+'</h3><div class="rl"><span class="tg h">'+HS[x[1]]+' <small>'+x[1]+'</small></span><span class="tg">'+QS[x[2]]+' <small>'+x[2]+'</small></span></div><p>'+x[5]+'</p>'+(x[3]?'<a class="btn" data-h href="'+x[3]+'" target="_blank" rel="noopener">'+(x[3].indexOf("linkedin")>-1?"LinkedIn’de aç ↗":"Instagram’da aç ↗")+'</a>':'<span class="m" style="color:var(--mut)">Kampanya arşivi</span>')+'</div>';lb.classList.add("on");fixEN($("#lbp"));document.body.style.overflow="hidden"}
+function closeV(){var v=$("video",lb);if(v)v.pause();lb.classList.remove("on");$("#lbp").innerHTML="";document.body.style.overflow=""}
+$("#lx").onclick=closeV;lb.addEventListener("click",function(e){if(e.target===lb)closeV()});addEventListener("keydown",function(e){if(e.key==="Escape")closeV()});
+/* hero collage */
+var fl=$("#fl");fl.innerHTML=[["kts-main",2,10,-7,.4,0],["atlas",52,0,5,.8,.8],["esan-c",26,205,-3,.7,1.6],["flormar-a",58,215,6,1.1,.4],["carbon",4,360,4,.5,1.2],["soma",52,400,-5,.9,2]].map(function(c){return '<img src="'+I[c[0]]+'" alt="" style="left:'+c[1]+'%;top:'+c[2]+'px;--r:'+c[3]+'deg;--d:'+(c[4]*30)+';--dl:'+c[5]+'s">'}).join("");
+addEventListener("mousemove",function(e){fl.style.setProperty("--mx",(e.clientX/innerWidth-.5)*-1);fl.style.setProperty("--my",(e.clientY/innerHeight-.5)*-1)});
+/* creative strip */
+var sg=P.map(function(p,pi){return '<div class="sg"><div class="sgt">'+p.t+'<small class="m">'+p.n+'</small></div><div class="sgc">'+p.p.map(function(x,i){return '<a class="sc2" href="#r'+pi+'_'+i+'" data-h style="--c:hsl('+p.c+' 85% 55%)"><img src="'+I[x[4]]+'" alt="'+x[0]+'"><span class="m">'+HS[x[1]]+'</span></a>'}).join("")+'</div></div>'}).join("");
+$("#strip").innerHTML='<div class="w m" style="color:var(--hi)">Marka marka akış · karta dokun, işe git</div><div class="sr"><div class="st2">'+sg+sg+'</div></div>';
+/* rhythm */
+var LD=[["Hero","Dikkat çek",[0,7],"b"],["Hub","Alışkanlık yarat",[0,1,2,3,4,5,6,7,8,9,10,11],"s"],["Hygiene","Soruyu cevapla",[2,5,8,11],"r"]];
+$("#rh").innerHTML='<div class="m rhh">Bir kampanyanın 12 haftası</div><p class="rhc">Hero seyrek, Hub düzenli, Hygiene kullanıcı aradığında görünür.</p>'+LD.map(function(l){var cs=l[3]==="r"?'<u></u>':'';for(var c=0;c<12;c++){cs+='<span class="cl">'+(l[2].indexOf(c)>-1?'<i class="pt '+l[3]+'" style="animation-delay:'+(c*.75+.375)+'s"></i>':'')+'</span>'}return '<div class="lane"><div class="ln"><b>'+l[1]+'</b><span class="m">'+l[0]+'</span></div><div class="cs">'+cs+'</div></div>'}).join("")+'<div class="ph2"></div>';
+/* lens */
+var L={Otokar:[
+["Neyi fark ettik?","Aynı araç, farklı kullanıcıların işine yarıyor.","Kaptan çalışma alanına, işletmeci operasyona, yolcu günlük yolculuğa bakıyor. Tek bir model görseli bu farklı soruları cevaplayamıyor.","Bu özellik, kimin gününde hangi farkı yaratıyor?",null,null],
+["Neyi seçtik?","Her içerikte bir kullanıcı, bir ihtiyaç, bir fayda.","",null,["MODEL","KULLANICI","İHTİYAÇ","FAYDA"],[["Tek mesaj","Tüm donanımı sıralamak yerine tek bir kullanım sorusuna odaklanmak."],["Gündelik bağlam","Konforu koltukla sınırlamayıp uzun mesai içinde göstermek."],["Devam edebilen format","Bir modelin fikrini farklı kullanıcılarla yeni bölümlere taşımak."],["Mecraya göre derinlik","Kısa videoda tek an, açıklamada ürün bilgisi."]]],
+["Nasıl hayata geçirdik?","Strateji ve üretim aynı hatta ilerliyor.","AI konseptleri stratejinin görsel provasını oluşturuyor; içerik sistemi aynı düşünceyle devam ediyor.",null,null,[["Kullanıcı deneyimi","Yeni Kent röportajları: kaptan ve işletmeci ürüne hangi sorularla bakıyor?"],["Ürün faydası","Tek detay, tek ihtiyaç; bir özellik ve kullanım koşulu."],["Bir iş günü","e-CENTRO: aracın çalıştığı ortamı günün akışında göstermek."]]]],
+Aksa:[
+["Neyi fark ettik?","Aynı sanayi dilinde üç farklı soru var.","Elyaf, karbon elyaf ve enerji sistemi aynı soruyla anlatılamaz; her marka için neyin anlaşılır olacağını ayrı belirledik.",null,null,[["Aksa Akrilik","Malzemeyi tanıdık kılmak."],["Aksa Carbon","Teknik özelliğe bağlam vermek."],["Akset Enerji","Sistemi görünür kılmak."]]],
+["Neyi seçtik?","Marka kadar mecra da ayrıştırıldı.","Aynı duyuruyu üç hesapta tekrarlamak yerine her mecraya ayrı bir görev verildi.",null,null,[["Instagram","Hayatın içindeki karşılık: merak, tanıdık bir an, tek bir veri."],["Kurumsal LinkedIn","Uygulama ve kanıt: yöntem, kapsam, veri."],["Genel Müdür LinkedIn","Karar ve yorum: bilginin iş öncelikleri açısından anlamı."]]],
+["Nasıl hayata geçirdik?","Her markanın kendi seri yapısı var.","2026–2027 içerik stratejisinde her seri tek bir soruyu cevaplıyor.",null,null,[["Behind the Fiber","Üretim hattından tek bir yetkinliği açan kısa film serisi."],["Elyaf Ansiklopedisi","Her içerikte bir soru ve kaydetmeye değer bir cevap."],["Karbonun İzinde","Üretim aşamalarını gerçek hat ve ekiple izlemek."],["Raporlarla Sürdürülebilirlik","Tek bir veri, yıl ve üretimdeki karşılığı."]]]]};
+var lt="Otokar",ls=0;
+function lens(){$("#tabs").innerHTML=Object.keys(L).map(function(k){return '<button class="c'+(k===lt?' on':'')+'" data-h data-t="'+k+'">'+k+'</button>'}).join("");
+$("#steps").innerHTML=L[lt].map(function(s,i){return '<button class="sp'+(i===ls?' on':'')+'" data-h data-s="'+i+'"><span class="m">0'+(i+1)+'</span><b>'+s[0]+'</b></button>'}).join("");
+var s=L[lt][ls];$("#lp").innerHTML='<div class="fade"><span class="m" style="color:var(--hi)">'+lt+' / '+s[0]+'</span><h3>'+s[1]+'</h3>'+(s[2]?'<p>'+s[2]+'</p>':'')+(s[3]?'<div class="q">'+s[3]+'</div>':'')+(s[4]?'<div class="chain">'+s[4].map(function(x,i){return (i?'<b>→</b>':'')+'<span>'+x+'</span>'}).join("")+'</div>':'')+(s[5]?'<ul>'+s[5].map(function(x){return '<li><b>'+x[0]+'</b>'+x[1]+'</li>'}).join("")+'</ul>':'')+'</div>';fixEN($("#lp"));fixEN($("#tabs"))}
+lens();
+$("#tabs").addEventListener("click",function(e){var b=e.target.closest("[data-t]");if(b){lt=b.dataset.t;lens()}});
+$("#steps").addEventListener("click",function(e){var b=e.target.closest("[data-s]");if(b){ls=+b.dataset.s;lens()}});
+/* independents */
+var N=[
+{t:"Boğaz",m:"Instagram",n:"İstanbul’un gündelik hayatını sevgiyle ve mizahla anlatan bir kültür hesabı.",i:"İstanbul hakkında değil. İstanbul’un içinden.",
+ b:"İstanbul’u anlatan ama turizm sloganına, nostaljiye ve şikâyete düşmeyen bir kültür hesabı kur.",
+ k:"Hesabı rehber yerine karakter olarak kurduk: çok şey görmüş, anlatmaya uğraşmayan, yaşlı ama yorulmamış bir ses. Şehir, onun cümlelerinden tanınıyor.",
+ f:[["Tek kare, tek cümle","“Herkesin bir hikâyesi var. Hiç bilemezsin.”","bogaz","Hub","Inspire","Fotoğraf bir şeyi gösterir, caption başka yerden yaklaşır."],["Üçüncü tekne","“Galata Köprüsü’nün altındaki üçüncü tekne. İlki değil, üçüncüsü.”","","Hub","Entertain","Küçük ve kesin bir öneri, hesabın yerel hafızasını kurar."],["Bugün buradayım","Bugün Kadıköy iskelesindeyim. Martılar benden önce gelmiş.","","Hub","Entertain","İskele ve semt notlarıyla şehri karakterin ağzından gezdirir."],["İki kıta, bir ses","“İki kıta arasında çalışıyorum. Hybrid.”","","Hub","Entertain","LinkedIn’de kurumsal formatın içinden beklenmedik bir ses."],["Vapur saatleri","Hangi vapur, hangi iskeleden, ne zaman? Karakterin diliyle sabit rehber.","","Hygiene","Educate","Öne çıkanlarda durur; yolunu arayan herkese hazır cevap."],["Bir gün, iki yaka","Sabahtan akşama iki yakayı izleyen tek parça film.","","Hero","Inspire","Ayda bir büyük an; karakterin dünyasını bir bütün olarak gösterir."]],
+ w:[["Pazartesi","Tek kare, tek cümle","Hub"],["Çarşamba","Üçüncü tekne","Hub"],["Cuma","Bugün buradayım","Hub"],["Sürekli","Vapur saatleri rehberi","Hygiene"],["Ayda bir","Bir gün, iki yaka","Hero"]],
+ y:["Tek kareyle bir anı tutar.","Karakteri kendisi açıklamaz."],tm:"Görsel, konsept dosyasındaki referanstır; kişisel çekim değildir. Örnek metinler konsept önerisidir."},
+{t:"Bir Kitabı Bitiremeyenler",m:"Instagram",n:"Kitap sayısıyla değil, yarım kalan sayfada birbirini tanıyan okurlarla büyüyen bir topluluk hesabı.",i:"Bir eksiklikten birliktelik çıkarmak.",
+ b:"Kitap okumayı performansa dönüştürmeyen, okurları suçluluk yerine ortak bir cümlede buluşturan bir topluluk hesabı kur.",
+ k:"Bitiremediğin kitabı kusur değil, konuşmanın başlangıcı yaptık. Hesap bir otorite değil, küratör; içerik biter, konuşma DM ve story yanıtlarıyla sürer.",
+ f:[["Yer imi","“Yer imini taşıdım 3 aydır. Kitabı değil.”","bkbo","Hero","Inspire","Hesabın çıkış fikri: yarım kalan gündelik bir an."],["Bir insan, bir neden","Üye hikâyeleri: aynı sayfada kalmanın arkasındaki hayat.","","Hub","Inspire","Okur kendini bir başkasının cümlesinde tanır."],["Rafta","“Başladım, bıraktım…” Bırakma nedenini paylaşan kısa yorumlar.","","Hub","Entertain","Tavsiye vermek yerine itirafla yakınlık kurar."],["Haftalık soru","“Hangi bahaneyle bıraktın? Hayat. Başka kitap.”","","Hub","Entertain","Story yanıtları bir sonraki içeriğin malzemesi olur."],["İtiraf kutusu","“Kitabı açtım. Kapağını okudum. İyi saydım.”","","Hub","Inspire","Anonim ve izinle paylaşılan, yargılanmayan bir alan."],["Buraya nasıl katılırım?","Sabit gönderi: itiraf gönder, soruya yanıt ver, hikâyeni anlat.","","Hygiene","Educate","Yeni gelen herkes ilk burada ne yapacağını bulur."]],
+ w:[["Pazartesi","Haftalık soru","Hub"],["Çarşamba","Rafta","Hub"],["Cuma","İtiraf kutusu","Hub"],["Sürekli","Katılım rehberi","Hygiene"],["Ayda bir","“Bu ay da bitmedi. (Ve bu tamam.)” bülteni","Hub"]],
+ y:["Kısa, dürüst ve tanıdık bir dille konuşur.","Okuma rekabeti yaratmaz."],tm:"Ana görsel AI ile üretilmiş bir konsept görselidir. Örnek metinler konsept önerisidir."},
+{t:"SOMA",m:"Instagram",n:"Kahve bilgisini giriş şartı yapmayan, kaliteden ödün vermeyen bir kahve markası için kampanya yaklaşımı.",i:"Kahveyi ciddiye al. Kendini alma.",
+ b:"Kahve bilgisini giriş şartına dönüştürmeyen, kaliteden ödün vermeyen bir kahve markası için kampanya ve içerik yaklaşımı kur.",
+ k:"Markanın bilgi barikatını kaldırdık: şehirde bir karşılaşma, Instagram’da bir davet, filmde bir ritüel. Aynı fikir her mecrada başka bir karşılaşma öneriyor.",
+ f:[["Ankara cephe önerisi","Boş bir binanın cephesinde yalnızca “SOMA.” yazısı.","soma","Hero","Entertain","Duvar son durak değil; fotoğrafla sosyal akışa taşınan bir an."],["Levent billboard","“Sabah 4 dakika ayır.”","","Hero","Convince","Kahveye ayrılacak süreyi vaat eder, satın almaya yaklaşır."],["Kahvenin sınavı yok","Kahveni seçerken doğru cevap arama. Sana güzel geliyorsa oradan başlayalım.","soma-sinav","Hub","Entertain","Bilme baskısını düğümlenmiş kalemle görünür kılar."],["Ezberini sil","Herkesin doğrusu başka. Sen ilk yudumda ne hissettin?","soma-ezber","Hub","Inspire","Silgi, ezberden çıkmayı anlatır."],["Sabah hakkın filmi","00:00 alarm. 00:08 “Bugünün sana borçlu olduğu tek şey bu.” 00:20 kahve suyla buluşur. 00:33 ilk yudum.","","Hero","Inspire","45 saniye: duygu önce, ürün 20. saniyede."],["Hangi kahve bana göre?","Üç soruluk story: sabah mı, öğleden sonra mı, ilk yudumda ne bekliyorsun?","","Hygiene","Educate","Seçim yapamayanı jargonsuz yönlendiren sabit rehber."]],
+ w:[["Pazartesi","Kahvenin sınavı yok","Hub"],["Çarşamba","Ezberini sil","Hub"],["Cuma","Sabah ritüeli reel’i","Hub"],["Sürekli","Hangi kahve bana göre?","Hygiene"],["Kampanya dönemi","Cephe ve Sabah hakkın filmi","Hero"]],
+ y:["Kahve tekniğini meraklı bir sesle anlatır.","Üçüncü dalga kahve snobluğuna girmez."],tm:"Cephe ve kampanya kreatifleri AI ile üretilmiş konsept görselleştirmeleridir; gerçekleşmiş uygulama değildir. Diğer örnekler konsept önerisidir."},
+{t:"Z Enerji",m:"LinkedIn",n:"LinkedIn’de enerji sektörünü, o sektörde çalışanların sorularıyla anlatan bir seri.",i:"Rüzgârı herkes görür. Kararı kim verir?",
+ b:"Enerji sektörünü teknik jargona boğmadan, o sektörde düşünen insanların sorularıyla LinkedIn’de anlat.",
+ k:"Türbinin kanadı yerine arkasındaki kararı gösterdik. Her bölüm güçlü bir ilk cümleyle, tek bir görsel fikirle ve devam etmeye değer bir meslek sorusuyla başlıyor.",
+ f:[["İşin arkasında / 01","Rüzgârı herkes görür. Kararı kim verir?","zenerji","Hero","Inspire","Serinin açılışı: kanat yerine karar."],["İş ilanında üç satır","Üç satırın arkasında bir gün dolusu karar. Üç kartlı doküman.","","Hub","Educate","Bir rolü görev listesinin ötesinde gösterir."],["Bir ölçüm. Bir yorum. Bir karar.","Saha, analiz ve ekip kararlarını uzmanlarla açan doküman.","","Hub","Educate","Gerçek uzman görüşüyle ilerler; çalışan alıntısı uydurulmaz."],["Gece sessiz. Sorular çalışıyor.","Enerji sisteminin sürekliliği için hangi ekipler hangi sorularla çalışıyor?","zenerji1","Hub","Inspire","Şiirsel kapak ilgiyi açar, metin somut bir soruya iner."],["Senin gününde hangi karar görünmüyor?","Bir sonraki bölümün sorusu yorumlarda başlar.","","Hub","Inspire","Yorumları sonraki bölümün malzemesine çevirir."],["Enerji sözlüğü","Kapasite faktörü nedir? Tek cümle, tek örnek.","","Hygiene","Educate","Sektöre yeni girenin aradığında bulacağı kısa açıklama."]],
+ w:[["Salı","İşin arkasında bölümü","Hub"],["Perşembe","Üç kartlı doküman","Hub"],["Cuma","Yorumlardan gelen soru","Hub"],["Sürekli","Enerji sözlüğü","Hygiene"],["Sezon açılışı","İşin arkasında / 01","Hero"]],
+ y:["Uzmanlığı bir soruyla açar.","Çalışan alıntısı veya sonuç uydurmaz."],tm:"Görseller konsept görselleştirmesidir; gerçek uygulamada sorular uzman görüşüyle yanıtlanır. Örnek içerikler konsept önerisidir."}];
+var ni=0;
+function ind(){$("#isum").innerHTML=N.map(function(n,k){return '<button class="is'+(k===ni?' on':'')+'" data-h data-i="'+k+'"><span class="fr"><img src="'+I[n.f[0][2]]+'" alt="'+n.t+'"></span><span class="m">'+n.m+' · temsili</span><b>'+n.t+'</b><span class="ot">'+n.n+'</span></button>'}).join("");
+var n=N[ni];$("#ipan").innerHTML='<div class="fade"><div class="ih"><span class="m" style="color:var(--hi)">'+n.m+' / '+n.t+'</span><h3>'+n.i+'</h3></div><div class="bf"><div class="bc"><span class="m">Brief</span><p>'+n.b+'</p></div><div class="bc kk"><span class="m">Karşılığı</span><p>'+n.k+'</p></div></div><h4 class="sh2">Fikirler</h4><div class="ig2">'+n.f.map(function(x,j){return '<figure class="it" style="margin:0">'+(x[2]?'<img src="'+I[x[2]]+'" alt="'+x[0]+'">':'<div class="pm"><span>'+x[1]+'</span></div>')+'<div class="tx"><span class="m" style="color:var(--hi)">0'+(j+1)+'</span><b>'+x[0]+'</b>'+(x[2]?'<p>'+x[1]+'</p>':'')+tag(x[3],x[4])+'<p class="nn">'+x[5]+'</p></div></figure>'}).join("")+'</div><h4 class="sh2">Örnek bir akış</h4><div class="wk">'+n.w.map(function(w){return '<div class="wd"><span class="m">'+w[0]+'</span><b>'+w[1]+'</b><span class="tg h">'+HS[w[2]]+'</span></div>'}).join("")+'</div><div class="yy"><div><b>YAPAR</b>'+n.y[0]+'</div><div><b>YAPMAZ</b>'+n.y[1]+'</div></div><p class="nt m">Temsili konsept · Yayınlanmamış. '+n.tm+'</p></div>';fixEN($("#ipan"));fixEN($("#isum"))}
+ind();$("#isum").addEventListener("click",function(e){var b=e.target.closest(".is");if(b){ni=+b.dataset.i;ind()}});
+var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target,n=+el.dataset.n,pre=el.dataset.p||"",suf=el.dataset.s||"",t0=null;function f(t){t0=t0||t;var k=Math.min((t-t0)/1300,1),v=Math.round(n*(1-Math.pow(1-k,3)));el.textContent=pre+v+suf;if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f);cio.unobserve(el)})},{threshold:.4});
+$$(".cu").forEach(function(el){cio.observe(el)});
+fixEN();
+/* motion */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.1});
+$$(".rv").forEach(function(el){io.observe(el)});
+var bar=$("#bar"),cur=$("#cur");
+addEventListener("scroll",function(){var h=document.documentElement;bar.style.width=h.scrollTop/(h.scrollHeight-h.clientHeight)*100+"%"},{passive:true});
+addEventListener("mousemove",function(e){cur.style.left=e.clientX-7+"px";cur.style.top=e.clientY-7+"px"});
+document.addEventListener("mouseover",function(e){cur.classList.toggle("b",!!e.target.closest("[data-h]"))});
+$$(".mg").forEach(function(b){b.addEventListener("mousemove",function(e){var r=b.getBoundingClientRect();b.style.transform="translate("+(e.clientX-r.left-r.width/2)*.25+"px,"+(e.clientY-r.top-r.height/2)*.35+"px)"});b.addEventListener("mouseleave",function(){b.style.transform=""})});
+$("#th").onclick=function(){var d=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim().toLowerCase()==="#0a0a0f";document.documentElement.setAttribute("data-theme",d?"light":"dark")};
+})();
+</script>
+</body>
+</html>
